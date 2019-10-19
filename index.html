@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		 
+		 <script src="jquery-1.10.2.js"></script>
+		 <script src="jquery-ui.js"></script>
+		 
+			<!--
+		  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		  <link rel="stylesheet" href="/resources/demos/style.css">
+		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			--> 
+		 <script src="http://d3js.org/d3.v3.min.js"></script>
+		 <script type="text/javascript" src="script.js"></script>
+		 <title>Scheduling Simulation</title>
+		 
+	</head>
+	<body>
+		<div class="top">
+			<div class="visual_display" id="left"></div>
+			<div class="right">
+				<div class="inner_div">	
+					<h2>Scheduling Models</h2>
+					<table class="frame" id="myTable">
+						<thead class="table_head">
+						
+						</thead>
+						<tbody class="table_body">
+							
+						</tbody>
+					
+					</table>
+				</div>		
+			</div>
+		</div>	
+		<div class="bottom">
+			<div class="gann_chart" id="footer_left" ondrop = "insert();updatex()">
+				
+
+			</div>
+			<div id="footer_right">
+				<select  class="select_data" id="select_data" onchange="datasource_define()">
+	  				<option value ='data.json' >Type 1</option>
+	  				<!--<option value ='data2.json'>Data_1</option>
+	  				<option value ='data3.json'>Data_2</option>-->
+	  				<option value ='data1.json'>Type 2</option>
+				</select>
+				<p/>
+				<!--<button class="button load_data" onclick="Datasource_choose()">Confirm</button>
+				<p/>
+				<button class="button start_button" id="start_button">Load</button>
+				<p/>-->
+				<button class="button" onclick="run_all()" >Start</button>
+				<p/>
+				<!--<button onclick="show_heuristic()" >Show</button>
+				<p/>-->
+				<button class="button" onclick="stopAnimation()" >Stop</button>
+				<p/>				
+				<a href="instruct.html" target="view_window">Help</a>				
+			</div>
+		</div>
+		
+	</body>
+</html>

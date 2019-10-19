@@ -1,0 +1,40 @@
+{
+	"layout": 
+	{"rowNum":5,"colNum":5,"stageNum":6,"agvNum":2,"vesselNum":3,"recipeNum":3,"maxStep":6} 
+
+	,
+	"stage": [
+	{"Name":"Liquid A","ShortName":"Li-A","ID":0,"Occupied":0,"Position_x":4,"Position_y":1 },
+	{"Name":"Liquid B","ShortName":"Li-B","ID":1,"Occupied":0,"Position_x":4,"Position_y":2 },
+	{"Name":"Mix","ShortName":"Mix","ID":2,"Occupied":0,"Position_x":4,"Position_y":3 },
+	{"Name":"Heat","ShortName":"Heat","ID":3,"Occupied":0,"Position_x":4,"Position_y":4 },
+	{"Name":"Discharge","ShortName":"Disc","ID":4,"Occupied":0,"Position_x":2,"Position_y":4 },
+	{"Name":"Clean","ShortName":"Cln","ID":5,"Occupied":0,"Position_x":0,"Position_y":4 }
+	],
+	"agv": [
+	{"ID":0,"Occupied":0,"carried":"none","Position_x":0,"Position_y":2 },
+	{"ID":1,"Occupied":0,"carried":"none","Position_x":1,"Position_y":2 }
+	],
+	"vessel": [
+	{"ID":0,"Occupied":0,"Position_x":0,"Position_y":0 },
+	{"ID":1,"Occupied":0,"Position_x":1,"Position_y":0 },
+	{"ID":2,"Occupied":0,"Position_x":2,"Position_y":0 }
+	],
+	"recipe": [
+	{"ID":0,"batchNum":4,"stepNum":5,"duration":64,"step":[{"Name":"Charging A","ID":0,"Vessel":0,"processingTime":10,"stage":0 },
+														   {"Name":"Charging B","ID":1,"Vessel":0,"processingTime":16,"stage":1 },
+														   {"Name":"Mixing","ID":2,"Vessel":0,"processingTime":6,"stage":2 },
+														   {"Name":"Discharging","ID":3,"Vessel":0,"processingTime":26,"stage":4 },
+														   {"Name":"Cleaning","ID":4,"Vessel":0,"processingTime":6,"stage":5 }]},
+	{"ID":1,"batchNum":5,"stepNum":4,"duration":32,"step":[{"Name":"Charging B","ID":0,"Vessel":1,"processingTime":10,"stage":1 },
+														   {"Name":"Heating","ID":1,"Vessel":1,"processingTime":6,"stage":3 },
+														   {"Name":"Discharging","ID":2,"Vessel":1,"processingTime":10,"stage":4 },
+														   {"Name":"Cleaning","ID":3,"Vessel":1,"processingTime":6,"stage":5 }]},
+	{"ID":2,"batchNum":7,"stepNum":6,"duration":70,"step":[{"Name":"Charging B","ID":0,"Vessel":2,"processingTime":10,"stage":1 },
+														   {"Name":"Charging A","ID":1,"Vessel":2,"processingTime":16,"stage":0 },
+														   {"Name":"Mixing","ID":2,"Vessel":2,"processingTime":6,"stage":2 },
+														   {"Name":"Heating","ID":3,"Vessel":2,"processingTime":6,"stage":3 },
+														   {"Name":"Discharging","ID":4,"Vessel":2,"processingTime":26,"stage":4 },
+														   {"Name":"Cleaning","ID":5,"Vessel":2,"processingTime":6,"stage":5 }]}
+	]	
+}

@@ -1,0 +1,74 @@
+{
+"layout": 
+	{"rowNum":7,"colNum":7,"stageNum":7,"agvNum":4,"vesselNum":5,"recipeNum":5,"maxStep":10} 
+	
+	,
+	"stage": [
+	{"Name":"Liquid A","ShortName":"Li-A","ID":0,"Occupied":0,"Position_x":6,"Position_y":0 },
+	{"Name":"Liquid B","ShortName":"Li-B","ID":1,"Occupied":0,"Position_x":6,"Position_y":1 },
+	{"Name":"Liquid C","ShortName":"Li-C","ID":2,"Occupied":0,"Position_x":6,"Position_y":2 },
+	{"Name":"Mix","ID":3,"ShortName":"Mix","Occupied":0,"Position_x":6,"Position_y":3 },	
+	{"Name":"Heat","ID":4,"ShortName":"Heat","Occupied":0,"Position_x":6,"Position_y":4 },
+	{"Name":"Discharge","ShortName":"Disc","ID":5,"Occupied":0,"Position_x":6,"Position_y":5 },
+	{"Name":"Clean","ShortName":"Cln","ID":6,"Occupied":0,"Position_x":6,"Position_y":6 }
+	
+	],
+	"agv": [
+	{"ID":0,"Occupied":0,"carried":"none","Position_x":3,"Position_y":1 },
+	{"ID":1,"Occupied":0,"carried":"none","Position_x":3,"Position_y":2 },
+	{"ID":2,"Occupied":0,"carried":"none","Position_x":3,"Position_y":3 },
+	{"ID":2,"Occupied":0,"carried":"none","Position_x":3,"Position_y":4 }
+	
+	],
+	"vessel": [
+	{"ID":0,"Occupied":0,"Position_x":0,"Position_y":1 },
+	{"ID":1,"Occupied":0,"Position_x":0,"Position_y":2 },
+	{"ID":2,"Occupied":0,"Position_x":0,"Position_y":3 },
+	{"ID":3,"Occupied":0,"Position_x":0,"Position_y":4 },
+	{"ID":3,"Occupied":0,"Position_x":0,"Position_y":5 }
+	],
+	"recipe": [
+	{"ID":0,"batchNum":4,"stepNum":7,"duration":100,"step":[{"Name":"Charging A","ID":0,"Vessel":0,"processingTime":10,"stage":0 },										 	
+								                            {"Name":"Charging B","ID":1,"Vessel":0,"processingTime":10,"stage":1 },
+											                {"Name":"Charging C","ID":2,"Vessel":0,"processingTime":10,"stage":2 },
+											                {"Name":"Mixing","ID":3,"Vessel":0,"processingTime":16,"stage":3 },
+											                {"Name":"Heating","ID":4,"Vessel":0,"processingTime":14,"stage":4 },
+								                            {"Name":"Discharging","ID":5,"Vessel":0,"processingTime":26,"stage":5 },
+								                            {"Name":"Cleaning","ID":6,"Vessel":0,"processingTime":14,"stage":6 }]},
+	{"ID":1,"batchNum":5,"stepNum":8,"duration":130,"step":[{"Name":"Charging A","ID":0,"Vessel":1,"processingTime":10,"stage":0 },										 	
+								                            {"Name":"Charging B","ID":1,"Vessel":1,"processingTime":20,"stage":1 },
+											                {"Name":"Mixing","ID":2,"Vessel":1,"processingTime":10,"stage":3 },
+											                {"Name":"Heating","ID":3,"Vessel":1,"processingTime":20,"stage":4 },
+											                {"Name":"Charging_C","ID":4,"Vessel":1,"processingTime":20,"stage":2 },
+											                {"Name":"Mixing","ID":5,"Vessel":1,"processingTime":10,"stage":3 },
+								                            {"Name":"Discharging","ID":6,"Vessel":1,"processingTime":26,"stage":5 },
+								                            {"Name":"Cleaning","ID":7,"Vessel":1,"processingTime":14,"stage":6 }]},									 
+    {"ID":2,"batchNum":6,"stepNum":9,"duration":140,"step":[{"Name":"Charging A","ID":0,"Vessel":2,"processingTime":20,"stage":0 },
+											                {"Name":"Heating","ID":1,"Vessel":2,"processingTime":14,"stage":4 },	
+								                            {"Name":"Charging B","ID":2,"Vessel":2,"processingTime":20,"stage":1 },
+											                {"Name":"Mixing","ID":3,"Vessel":2,"processingTime":14,"stage":3 },
+											                {"Name":"Heating","ID":4,"Vessel":2,"processingTime":12,"stage":4 },
+											                {"Name":"Charging_C","ID":5,"Vessel":2,"processingTime":10,"stage":2 },
+											                {"Name":"Mixing","ID":6,"Vessel":2,"processingTime":16,"stage":3 },
+								                            {"Name":"Discharging","ID":7,"Vessel":2,"processingTime":20,"stage":5 },
+								                            {"Name":"Cleaning","ID":8,"Vessel":2,"processingTime":14,"stage":6 }]},									 
+    {"ID":3,"batchNum":7,"stepNum":7,"duration":120,"step":[{"Name":"Charging B","ID":0,"Vessel":3,"processingTime":20,"stage":1 },
+											                {"Name":"Heating","ID":1,"Vessel":3,"processingTime":10,"stage":4 },	
+								                            {"Name":"Charging C","ID":2,"Vessel":3,"processingTime":20,"stage":2 },
+								                            {"Name":"Heating","ID":3,"Vessel":3,"processingTime":20,"stage":4 },
+											                {"Name":"Mixing","ID":4,"Vessel":3,"processingTime":14,"stage":3 },
+								                            {"Name":"Discharging","ID":5,"Vessel":3,"processingTime":20,"stage":5 },
+								                            {"Name":"Cleaning","ID":6,"Vessel":3,"processingTime":16,"stage":6 }]},											 
+    {"ID":4,"batchNum":8,"stepNum":10,"duration":140,"step":[{"Name":"Charging B","ID":0,"Vessel":4,"processingTime":10,"stage":1 },
+											                {"Name":"Charging A","ID":1,"Vessel":4,"processingTime":20,"stage":0 },
+											                {"Name":"Mixing","ID":2,"Vessel":4,"processingTime":10,"stage":3 },
+											                {"Name":"Heating","ID":3,"Vessel":4,"processingTime":16,"stage":4 },
+								                            {"Name":"Charging A","ID":4,"Vessel":4,"processingTime":10,"stage":0 },
+											                {"Name":"Charging C","ID":5,"Vessel":4,"processingTime":14,"stage":2 },
+								                            {"Name":"Mixing","ID":6,"Vessel":4,"processingTime":10,"stage":3 },
+											                {"Name":"Heating","ID":7,"Vessel":4,"processingTime":14,"stage":4 },
+								                            {"Name":"Discharging","ID":8,"Vessel":4,"processingTime":20,"stage":5 },
+								                            {"Name":"Cleaning","ID":9,"Vessel":4,"processingTime":16,"stage":6 }]}												 
+		
+	]	
+}
